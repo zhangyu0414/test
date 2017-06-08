@@ -1,0 +1,185 @@
+@charset "utf-8";
+body{
+    font: 1.4em "微软雅黑", Arial, Helvetica, sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    padding:0;
+    margin:0;
+}
+textarea{
+    resize: none;
+}
+.container{
+    max-width:960px;
+}
+/*页头*/
+#top{
+    background:#0066CC;
+}
+#top a{
+    color:#fff;
+    background:transparent;
+}
+#icon>span{
+    background:#fff;
+}
+@media screen and (min-width: 992px){
+    #main{
+        margin-top:50px
+    }
+    #top_nav{
+        display:none;
+    }
+    #account_nav>li>ul a{
+        color:#000000;
+    }
+    #account_nav>li>ul a:hover{
+        background:#d9edf7;
+    }
+    #loginBox,#registerBox{
+        padding-top:60px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    #main{
+        margin-top:50px
+    }
+    #top_nav{
+        display:none;
+    }
+    #account_nav>li>ul a{
+        color:#000000;
+    }
+    #account_nav>li>ul a:hover{
+        background:#d9edf7;
+    }
+    #loginBox,#registerBox{
+        padding-top:60px;
+    }
+}
+@media screen and (max-width: 767px) {
+    body{
+        font: 1.2em "微软雅黑", Arial, Helvetica, sans-serif;
+    }
+    #main{
+        margin-top:60px
+    }
+    #nav{
+        display:none;
+    }
+    #loginBox,#registerBox{
+        padding-top:20px;
+    }
+}
+/*main*/
+
+/*相册*/
+#photos div.row img{
+    margin-bottom: 15px;
+    transition:all 550ms ease-in-out
+}
+#photos div.row img:hover{
+    box-shadow:0 0 5px 1px #0066CC;
+}
+
+/*博主资料*/
+#person_info{
+    background-color:#fff6ed;
+    border:1px solid #ffc58b;
+    padding:15px;
+    border-radius:3px;
+    margin-bottom: 20px;
+}
+#person_info div.self_intro{
+    margin-top:15px;
+    padding-top:15px;
+    border-top:1px solid #ffc58b;
+}
+
+#message{
+    padding:5px;
+}
+#message h4,input,textarea{
+    margin-bottom:5px;
+}
+
+#messages>li>p>b{
+	color:#0066CC;
+}
+.progress{
+    transition:all 550ms ease-in-out;
+}
+.progress:hover{
+    box-shadow:0 0 5px 1px #0066CC;
+}
+/***** 版权所有 *****/
+#footer>p{
+    margin:20px 0;
+}
+
+/****登录和注册窗口****/
+#loginBox,
+#registerBox{
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index: 1040;
+    background: #185598;
+    display:none;
+}
+#loginBox .form-group,
+#registerBox .form-group{
+    margin:0;
+}
+#loginBox .container,
+#registerBox .container{
+    width:320px;
+}
+#loginBox h1,
+#registerBox h1{
+    color:#fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 3px 4px 2px rgba(0,0,0,0.3);
+    margin-bottom:10px;
+}
+#loginBox p,
+#registerBox p{
+    margin-bottom:25px;
+    color: #fff;
+}
+#loginBox input,
+#registerBox input{
+    margin:0;
+    background: rgba(0, 0, 0, 0.25);
+    border:1px solid rgba(255, 255, 255, 0.7);
+    color:#fff;
+}
+#loginBox input:focus,
+#registerBox input:focus{
+    border:1px solid #fff;
+}
+#loginBox .label,
+#registerBox .label{
+    margin:0;
+    display:block;
+    opacity:0;
+}
+
+#loginBox .btn-default,
+#registerBox .btn-default{
+    background: rgba(255, 255, 255, 0.05);
+    color:#fff;
+    transition:all 250ms ease-in-out;
+    border:1px solid rgba(255, 255, 255, 0.7);
+}
+#loginBox .btn-default:hover,
+#registerBox .btn-default:hover{
+    background: rgba(255, 255, 255, 0.1);
+    border:1px solid #fff;
+}
+#btnLogin,#btnRegister{
+    margin-bottom:10px;
+}
